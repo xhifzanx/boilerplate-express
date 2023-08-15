@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 //   res.json({ "message": response })
 // })
 
-app.get('/json',function(req, res, next) {
+app.use('/json',function(req, res, next) {
 	var string = req.method + " " + req.path + " - " + req.ip;
 	console.log(string)
 	next()
