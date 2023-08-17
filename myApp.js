@@ -2,6 +2,9 @@ require('dotenv').config()
 var bodyParser = require("body-parser");
 let express = require('express');
 let app = express();
+bodyParser.urlencoded({extended: false})
+app.use(bodyParser.json())
+
 
 let absolute_path = __dirname + "/views/index.html"
 app.use('/public', express.static(__dirname + "/public"));
@@ -41,8 +44,7 @@ app.get('/name', function(req, res) {
 	res.json({"name": name})
 })
 
-bodyParser.urlencoded({extended: false})
-app.use(bodyParser.json())
+
 
 
 
