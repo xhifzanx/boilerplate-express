@@ -15,5 +15,13 @@
   "description": "This is the boilerplate code for the Basic Node and Express Challenges. Instructions for working on these challenges start at https://www.freecodecamp.org/learn/apis-and-microservices/basic-node-and-express/",
   "devDependencies": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xhifzanx/boilerplate-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xhifzanx/boilerplate-express/issues"
+  },
+  "homepage": "https://github.com/xhifzanx/boilerplate-express#readme"
 }
