@@ -40,18 +40,16 @@ app.get('/:word/echo', function(req, res) {
 })
 
 
-app.get('/name', function(req, res) {
-  var name = req.query.first + ' ' + req.query.last
-  res.json({ "name": name })
-})
+// // app.get('/name', function(req, res) {
+// //   var name = req.query.first + ' ' + req.query.last
+// //   res.json({ "name": name })
+// // })
 
-app.post('/name', function(req, res) {
-  console.log(req.body)
-  var name = req.body.first + " " + req.body.last
-  console.log(name)
-  res.json({"name": name})
-})
-
+app.post("/name", function(req, res) {
+  // Handle the data in the request
+  var string = req.body.first + " " + req.body.last;
+  res.json({ name: string });
+});
 
 
 module.exports = app;
